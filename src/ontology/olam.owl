@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;olam.owl#"
+     xml:base="&obo;olam.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;olam.owl">
+        <dc:date xml:lang="en">2-6-2019</dc:date>
+        <dc:subject xml:lang="en">Laboratory animal medicine</dc:subject>
+        <dc:description xml:lang="en">OLAM is a biomedical ontology in the area of laboratory animal medicine.</dc:description>
+        <dc:title xml:lang="en">OLAM: Ontology of Laboratory Animal Medicine</dc:title>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <owl:imports rdf:resource="&obo;olam/DOID_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/NCBITaxon_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/OBI_imports.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10090 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_10090">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10114 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_10114">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10141 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_10141">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10150 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_10150">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_391902 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_391902">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9479 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_9479">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9901 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_9901">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9986 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_9986">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000001 -->
+
+    <owl:Class rdf:about="&obo;OLAM_0000001">
+        <rdfs:label xml:lang="en">laboratory animal</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>animal model</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
+        <obo:IAO_0000118>laboratory animal model</obo:IAO_0000118>
+        <obo:IAO_0000115>An animal organism that is used as an animal model of a human or animal disease in translational and biomedical research.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000002 -->
+
+    <owl:Class rdf:about="&obo;OLAM_0000002">
+        <rdfs:label xml:lang="en">laboratory animal role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
+        <obo:IAO_0000115>a role that inheres in an animal that is used as a laboratory animal model of human and animal disease in translational and biomedical research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>animal model role</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000003 -->
+
+    <owl:Class rdf:about="&obo;OLAM_0000003">
+        <rdfs:label xml:lang="en">laboratory animal investigation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000066"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>animal research</obo:IAO_0000118>
+        <obo:IAO_0000118>animal testing</obo:IAO_0000118>
+        <obo:IAO_0000118>animal experimentation</obo:IAO_0000118>
+        <obo:IAO_0000115>An investigation that uses a non-human laboratory animal in a study</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_testing</obo:IAO_0000119>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
