@@ -56,6 +56,7 @@ http://purl.obolibrary.org/obo/BFO_0000038 #one-dimensional temporal region
 http://purl.obolibrary.org/obo/BFO_0000148 #zero-dimensional temporal region
 http://purl.obolibrary.org/obo/BFO_0000055 #realizes
 http://purl.obolibrary.org/obo/BFO_0000066 #occurs in
+http://purl.obolibrary.org/obo/RO_0001025 #located in
 
 http://purl.obolibrary.org/obo/OGMS_0000090 #treatment
 http://purl.obolibrary.org/obo/OGMS_0000015 #clinical history

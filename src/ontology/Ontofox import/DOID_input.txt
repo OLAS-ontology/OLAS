@@ -9,10 +9,6 @@ http://purl.obolibrary.org/obo/DOID_399 #tuberculosis
 http://purl.obolibrary.org/obo/DOID_14456 #Brucella melitensis brucellosis
 http://purl.obolibrary.org/obo/DOID_14457 #Brucella abortus brucellosis
 
-
-# http://purl.obolibrary.org/obo/DOID_11077 #brucellosis
-# includeAllChildren
-
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease
 subClassOf http://purl.obolibrary.org/obo/BFO_0000016 #disposition
