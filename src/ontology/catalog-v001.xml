@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1549493726530" name="http://purl.obolibrary.org/obo/olam.owl" uri="olam.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1549493726530" name="http://purl.obolibrary.org/obo/olam/DOID_imports.owl" uri="imports/DOID_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1549493726530" name="http://purl.obolibrary.org/obo/olam/NCBITaxon_imports.owl" uri="imports/NCBITaxon_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1549493726530" name="http://purl.obolibrary.org/obo/olam/OBI_imports.owl" uri="imports/OBI_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1550434682952" name="http://purl.obolibrary.org/obo/olam.owl" uri="olam.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1550434682952" name="http://purl.obolibrary.org/obo/olam/DOID_imports.owl" uri="imports/DOID_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1550434682952" name="http://purl.obolibrary.org/obo/olam/NCBITaxon_imports.owl" uri="imports/NCBITaxon_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1550434682952" name="http://purl.obolibrary.org/obo/olam/OBI_imports.owl" uri="imports/OBI_imports.owl"/>
     </group>
 </catalog>

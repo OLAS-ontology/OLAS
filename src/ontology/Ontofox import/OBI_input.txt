@@ -62,6 +62,8 @@ http://purl.obolibrary.org/obo/OGMS_0000015 #clinical history
 http://purl.obolibrary.org/obo/OGMS_0000063 #disease course
 http://purl.obolibrary.org/obo/OGMS_0000073 #diagnosis
 
+http://purl.obolibrary.org/obo/IAO_0000007 #action specification
+http://purl.obolibrary.org/obo/OBI_0400171 #animal cage
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 #entity
