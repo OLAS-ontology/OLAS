@@ -15,12 +15,12 @@
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olam.owl">
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">2-6-2019</dc:date>
+        <dc:date xml:lang="en">2-17-2019</dc:date>
         <dc:description xml:lang="en">OLAM is a biomedical ontology in the area of laboratory animal medicine.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Laboratory animal medicine</dc:subject>
         <dc:title xml:lang="en">OLAM: Ontology of Laboratory Animal Medicine</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.09</owl:versionInfo>
     </owl:Ontology>
     
 
