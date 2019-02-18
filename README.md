@@ -5,5 +5,8 @@ The OLAM is established as a community-based biomedical ontology in the field of
 
 You can use our [Wiki site](https://github.com/olam-ontology/OLAM/wiki) to post your issues. Or you can use the olam-discuss@googlegroups.com to post emails and discussion messages. The olam-discuss Google Group website is available here: https://groups.google.com/forum/#!forum/olam-discuss.
 
+OLAM is now deposited at:
+http://bioportal.bioontology.org/ontologies/OLAM 
+
 We appreciate any feedback and collaboration from the community. Thanks!
 
