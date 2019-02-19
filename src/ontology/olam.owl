@@ -17,7 +17,9 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/DOID_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/GO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/NCBITaxon_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OAE_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OBI_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OPMI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/PR_imports.owl"/>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:date xml:lang="en">2-17-2019</dc:date>
@@ -297,7 +299,7 @@
         <obo:IAO_0000118>3Rs</obo:IAO_0000118>
         <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">The Three Rs principle</rdfs:label>
+        <rdfs:label xml:lang="en">The laboratory animal Three Rs principle</rdfs:label>
     </owl:Class>
     
 
@@ -306,11 +308,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>As one of the three Rs, the Replacement principle suggests the usage of methods to avoid or replace the use of animals in research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">The Replacement principle</rdfs:label>
+        <rdfs:label xml:lang="en">Replacement principle</rdfs:label>
     </owl:Class>
     
 
@@ -319,11 +327,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>As one of the three Rs, the Reduction principle suggests the usage of methods to enable researchers to obtain comparable levels of information from fewer animals, or to obtain more information from the same number of animals.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">The Reduction principle</rdfs:label>
+        <rdfs:label xml:lang="en">Reduction principle</rdfs:label>
     </owl:Class>
     
 
@@ -332,11 +346,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>As one of the three Rs, the Refinement principle proposes the usage of methods to alleviate or minimize potential pain, suffering or distress, and enhance animal welfare for the animals used</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">The Refinement principle</rdfs:label>
+        <rdfs:label xml:lang="en">Refinement principle</rdfs:label>
     </owl:Class>
     
 
@@ -569,6 +589,340 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>A planned process that intentionally puts an animal to death or allows to die by withholding extreme medical measures</obo:IAO_0000115>
+        <obo:IAO_0000118>euthanasia</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">animal euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+        <obo:IAO_0000115>An euthanasia process that follows the best practice principle</obo:IAO_0000115>
+        <obo:IAO_0000118>animal euthanasia best practice</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">euthanasia best practice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">intravenous anesthetic euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">inhalant euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Cervical_dislocation</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">cervical dislocation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+        <obo:IAO_0000118>IC injection</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">intracardiac injection euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">intraperitoneal injection euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000026"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">pentobarbital intracardiac injection euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">shooting euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000029"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">firearm shooting euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000029"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">captive bolt gun shooting euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">isoflurane inhalant euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">sevoflurane inhalant euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
+        <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">carbon dioxide inhalant euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000023"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">barbiturate intravenous anesthetic euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000023"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">somulose intravenous anesthetic euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000023"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">tributame intravenous anesthetic euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
+        <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">carbon monoxide inhalant euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
+        <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">nitrogen inhalant euthanasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>A planned process that supports the well-being of nonhuman animal</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">animal welfare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">animal welfare act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">laboratory animal welfare act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+        <rdfs:label xml:lang="en">USA animal welfare act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+        <rdfs:label xml:lang="en">UK animal welfare act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+        <rdfs:label xml:lang="en">Ireland animal welfare act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Indian animal welfare act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">laboratory animal reduction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">laboratory animal refinement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">laboratory animal replacement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">United Nations animal welfare act</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+        <rdfs:label xml:lang="en">adverse event in animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000118>IACUC</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.nabr.org/animal-welfare-2/animal-welfare-in-practice/functions-of-the-iacuc/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Institutional Animal Care and Use Committee</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PR_000002310 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000002310">
@@ -585,6 +939,98 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000040 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000040">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <obo:IAO_0000118>AVMA</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.avma.org</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">American Veterinary Medical Association</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000043 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000043">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000051"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/An_Act_against_Plowing_by_the_Tayle,_and_pulling_the_Wooll_off_living_Sheep</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">An Act against Plowing by the Tayle, and pulling the Wooll off living Sheep</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000045 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000045">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000049"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_Welfare_Act_2006</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Animal Welfare Act 2006</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000046 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000046">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000051"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cruelty_to_Animals_Act_1835</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Cruelty to Animals Act 1835</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000047 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000047">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000050"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Protection_of_Animals_Act_1911</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Protection of Animals Act 1911</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000048 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000048">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000049"/>
+        <rdfs:label xml:lang="en">Animal Welfare Act of 1966</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000053 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000053">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000052"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Prevention_of_Cruelty_to_Animals_Act</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Prevention of Cruelty to Animals Act</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000058 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000058">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000057"/>
+        <obo:IAO_0000118>UDAW</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Universal_Declaration_on_Animal_Welfare</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Universal Declaration on Animal Welfare</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
