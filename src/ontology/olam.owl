@@ -1,33 +1,50 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/olam.owl#"
-     xml:base="http://purl.obolibrary.org/obo/olam.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ncbitaxon "http://purl.obolibrary.org/obo/ncbitaxon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;olam.owl#"
+     xml:base="&obo;olam.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olam.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/DOID_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/GO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/NCBITaxon_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OAE_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OBI_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OPMI_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/PR_imports.owl"/>
-        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">2-17-2019</dc:date>
-        <dc:description xml:lang="en">OLAM is a biomedical ontology in the area of laboratory animal medicine.</dc:description>
-        <dc:format xml:lang="en">OWL-DL</dc:format>
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ncbitaxon="&obo;ncbitaxon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;olam.owl">
+        <dc:contributor>Bob Dysko</dc:contributor>
+        <dc:date xml:lang="en">3-27-2019</dc:date>
         <dc:subject xml:lang="en">Laboratory animal medicine</dc:subject>
+        <dc:description xml:lang="en">OLAM is a biomedical ontology in the area of laboratory animal medicine.</dc:description>
         <dc:title xml:lang="en">OLAM: Ontology of Laboratory Animal Medicine</dc:title>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.10</owl:versionInfo>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <owl:imports rdf:resource="&obo;olam/DOID_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/GO_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/NCBITaxon_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/OAE_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/OBI_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/OPMI_imports.owl"/>
+        <owl:imports rdf:resource="&obo;olam/PR_imports.owl"/>
     </owl:Ontology>
     
 
@@ -45,7 +62,7 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
 
@@ -62,16 +79,16 @@
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000013 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OLAM_0000013">
-        <obo:IAO_0000115>An object property that represents a relation beween an animal organism and a disease</obo:IAO_0000115>
+    <owl:ObjectProperty rdf:about="&obo;OLAM_0000013">
         <rdfs:label xml:lang="en">is animal model for disease</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation beween an animal organism and a disease</obo:IAO_0000115>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000017 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OLAM_0000017">
+    <owl:ObjectProperty rdf:about="&obo;OLAM_0000017">
         <rdfs:label xml:lang="en">absent in process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -79,7 +96,7 @@
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000020 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OLAM_0000020">
+    <owl:ObjectProperty rdf:about="&obo;OLAM_0000020">
         <rdfs:label xml:lang="en">absent in location</rdfs:label>
     </owl:ObjectProperty>
     
@@ -98,47 +115,47 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10090 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10090">
+    <rdf:Description rdf:about="&obo;NCBITaxon_10090">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_11552"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11320"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_11320"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11520"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_12721"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11552"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_11520"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;DOID_11077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -147,11 +164,11 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10114 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10114">
+    <rdf:Description rdf:about="&obo;NCBITaxon_10114">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -160,11 +177,11 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10141 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10141">
+    <rdf:Description rdf:about="&obo;NCBITaxon_10141">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -173,11 +190,11 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10150 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10150">
+    <rdf:Description rdf:about="&obo;NCBITaxon_10150">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -186,11 +203,11 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_391902 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_391902">
+    <rdf:Description rdf:about="&obo;NCBITaxon_391902">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -199,11 +216,11 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9479 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9479">
+    <rdf:Description rdf:about="&obo;NCBITaxon_9479">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -212,11 +229,11 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9901 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9901">
+    <rdf:Description rdf:about="&obo;NCBITaxon_9901">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -225,11 +242,11 @@
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9986 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9986">
+    <rdf:Description rdf:about="&obo;NCBITaxon_9986">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -238,704 +255,704 @@
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000001">
+    <owl:Class rdf:about="&obo;OLAM_0000001">
+        <rdfs:label xml:lang="en">laboratory animal</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An animal organism that is used as an animal model of a human or animal disease in translational and biomedical research.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>animal model</obo:IAO_0000118>
-        <obo:IAO_0000118>laboratory animal model</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal</rdfs:label>
+        <obo:IAO_0000118>laboratory animal model</obo:IAO_0000118>
+        <obo:IAO_0000115>An animal organism that is used as an animal model of a human or animal disease in translational and biomedical research.</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    <owl:Class rdf:about="&obo;OLAM_0000002">
+        <rdfs:label xml:lang="en">laboratory animal role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <obo:IAO_0000115>a role that inheres in an animal that is used as a laboratory animal model of human and animal disease in translational and biomedical research.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>animal model role</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal role</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:IAO_0000115>An investigation that uses a non-human laboratory animal in a study</obo:IAO_0000115>
+    <owl:Class rdf:about="&obo;OLAM_0000003">
+        <rdfs:label xml:lang="en">laboratory animal investigation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000066"/>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000118>animal experimentation</obo:IAO_0000118>
         <obo:IAO_0000118>animal research</obo:IAO_0000118>
         <obo:IAO_0000118>animal testing</obo:IAO_0000118>
+        <obo:IAO_0000118>animal experimentation</obo:IAO_0000118>
+        <obo:IAO_0000115>An investigation that uses a non-human laboratory animal in a study</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_testing</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal investigation</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
-        <obo:IAO_0000115>First described by W. M. S. Russell and R. L. Burch in 1959, the Three Rs (3Rs) in relation to science are guiding principles for more ethical use of animals in testing. The three Rs mean Replacement, Reduction, and Refinement.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000118>3Rs</obo:IAO_0000118>
-        <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000004">
         <rdfs:label xml:lang="en">The laboratory animal Three Rs principle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000007"/>
+        <obo:IAO_0000118>3Rs</obo:IAO_0000118>
+        <obo:IAO_0000115>First described by W. M. S. Russell and R. L. Burch in 1959, the Three Rs (3Rs) in relation to science are guiding principles for more ethical use of animals in testing. The three Rs mean Replacement, Reduction, and Refinement.</obo:IAO_0000115>
+        <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000004"/>
+    <owl:Class rdf:about="&obo;OLAM_0000005">
+        <rdfs:label xml:lang="en">Replacement principle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000056"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>As one of the three Rs, the Replacement principle suggests the usage of methods to avoid or replace the use of animals in research</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Replacement principle</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000004"/>
+    <owl:Class rdf:about="&obo;OLAM_0000006">
+        <rdfs:label xml:lang="en">Reduction principle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000054"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
+        <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
         <obo:IAO_0000115>As one of the three Rs, the Reduction principle suggests the usage of methods to enable researchers to obtain comparable levels of information from fewer animals, or to obtain more information from the same number of animals.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Reduction principle</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000004"/>
+    <owl:Class rdf:about="&obo;OLAM_0000007">
+        <rdfs:label xml:lang="en">Refinement principle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000055"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>As one of the three Rs, the Refinement principle proposes the usage of methods to alleviate or minimize potential pain, suffering or distress, and enhance animal welfare for the animals used</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/The_Three_Rs</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Refinement principle</rdfs:label>
+        <obo:IAO_0000119>Russell, W.M.S. and Burch, R.L., (1959). The Principles of Humane Experimental Technique, Methuen, London. ISBN 0900767782.</obo:IAO_0000119>
+        <obo:IAO_0000115>As one of the three Rs, the Refinement principle proposes the usage of methods to alleviate or minimize potential pain, suffering or distress, and enhance animal welfare for the animals used</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000008 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400171"/>
-        <obo:IAO_0000115>An animal cage that keeps mouse</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    <owl:Class rdf:about="&obo;OLAM_0000008">
         <rdfs:label xml:lang="en">mouse cage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0400171"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An animal cage that keeps mouse</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000001"/>
-        <obo:IAO_0000115>a laboratory animal that is used for human disease research</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000119>https://www.sciencedirect.com/book/9780124158948/animal-models-for-the-study-of-human-disease</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000009">
         <rdfs:label xml:lang="en">laboratory animal for human disease research</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000001"/>
+        <obo:IAO_0000119>https://www.sciencedirect.com/book/9780124158948/animal-models-for-the-study-of-human-disease</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a laboratory animal that is used for human disease research</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000010">
+    <owl:Class rdf:about="&obo;OLAM_0000010">
+        <rdfs:label xml:lang="en">laboratory animal for tuberculosis research</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;DOID_399"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000009"/>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4825961/</obo:IAO_0000119>
         <obo:IAO_0000115>a laboratory animal that is used for tuberculosis disease research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4825961/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal for tuberculosis research</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000001"/>
-        <obo:IAO_0000115>a laboratory animal that is used for zoonotic disease research</obo:IAO_0000115>
+    <owl:Class rdf:about="&obo;OLAM_0000011">
         <rdfs:label xml:lang="en">laboratory animal for zoonotic disease research</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000001"/>
+        <obo:IAO_0000115>a laboratory animal that is used for zoonotic disease research</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000012">
+    <owl:Class rdf:about="&obo;OLAM_0000012">
+        <rdfs:label xml:lang="en">laboratory animal for brucellosis research</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;DOID_11077"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000011"/>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;DOID_11077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a laboratory animal that is used for zoonotic brucellosis research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">laboratory animal for brucellosis research</rdfs:label>
+        <obo:IAO_0000115>a laboratory animal that is used for zoonotic brucellosis research</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000014">
+    <owl:Class rdf:about="&obo;OLAM_0000014">
+        <rdfs:label xml:lang="en">laboratory animal for HIV research</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_12721"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000009"/>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_12721"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a laboratory animal that is used for HIV/AIDS research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/B9780123694089000251</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal for HIV research</rdfs:label>
+        <obo:IAO_0000115>a laboratory animal that is used for HIV/AIDS research</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000015">
+    <owl:Class rdf:about="&obo;OLAM_0000015">
+        <rdfs:label xml:lang="en">immune response of mouse and not human</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0006955"/>
+                    <rdf:Description rdf:about="&obo;GO_0006955"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10090"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                        <owl:onProperty rdf:resource="&obo;OLAM_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006955"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006955"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000017"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jimmunol.org/content/172/5/2731</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">immune response of mouse and not human</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000016">
+    <owl:Class rdf:about="&obo;OLAM_0000016">
+        <rdfs:label xml:lang="en">immune response of human and not mouse</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0006955"/>
+                    <rdf:Description rdf:about="&obo;GO_0006955"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000017"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+                        <owl:onProperty rdf:resource="&obo;OLAM_0000017"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10090"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006955"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006955"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000017"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jimmunol.org/content/172/5/2731</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">immune response of human and not mouse</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000018 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000018">
+    <owl:Class rdf:about="&obo;OLAM_0000018">
+        <rdfs:label xml:lang="en">protein in mouse but not human</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
+                    <rdf:Description rdf:about="&obo;PR_000000001"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000020"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                        <owl:onProperty rdf:resource="&obo;OLAM_0000020"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+                        <owl:onProperty rdf:resource="&obo;RO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10090"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
         <obo:IAO_0000119>http://www.jimmunol.org/content/172/5/2731</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">protein in mouse but not human</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000019">
+    <owl:Class rdf:about="&obo;OLAM_0000019">
+        <rdfs:label xml:lang="en">protein in human but not mouse</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
+                    <rdf:Description rdf:about="&obo;PR_000000001"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000020"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+                        <owl:onProperty rdf:resource="&obo;OLAM_0000020"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10090"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                        <owl:onProperty rdf:resource="&obo;RO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;PR_000000001"/>
         <obo:IAO_0000119>http://www.jimmunol.org/content/172/5/2731</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">protein in human but not mouse</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000021 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>A planned process that intentionally puts an animal to death or allows to die by withholding extreme medical measures</obo:IAO_0000115>
-        <obo:IAO_0000118>euthanasia</obo:IAO_0000118>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000021">
         <rdfs:label xml:lang="en">animal euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000118>euthanasia</obo:IAO_0000118>
+        <obo:IAO_0000115>A planned process that intentionally puts an animal to death or allows to die by withholding extreme medical measures</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000022 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
-        <obo:IAO_0000115>An euthanasia process that follows the best practice principle</obo:IAO_0000115>
-        <obo:IAO_0000118>animal euthanasia best practice</obo:IAO_0000118>
+    <owl:Class rdf:about="&obo;OLAM_0000022">
         <rdfs:label xml:lang="en">euthanasia best practice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000021"/>
+        <obo:IAO_0000118>animal euthanasia best practice</obo:IAO_0000118>
+        <obo:IAO_0000115>An euthanasia process that follows the best practice principle</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000023">
         <rdfs:label xml:lang="en">intravenous anesthetic euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000024 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000024">
         <rdfs:label xml:lang="en">inhalant euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000025 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Cervical_dislocation</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000025">
         <rdfs:label xml:lang="en">cervical dislocation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Cervical_dislocation</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
+    <owl:Class rdf:about="&obo;OLAM_0000026">
+        <rdfs:label xml:lang="en">intracardiac injection euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000021"/>
         <obo:IAO_0000118>IC injection</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">intracardiac injection euthanasia</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000027 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000027">
         <rdfs:label xml:lang="en">intraperitoneal injection euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000028 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000026"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000028">
         <rdfs:label xml:lang="en">pentobarbital intracardiac injection euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000026"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intracardiac_or_intraperitoneal_injection</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000029 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000021"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000029">
         <rdfs:label xml:lang="en">shooting euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000021"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000029"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000030">
         <rdfs:label xml:lang="en">firearm shooting euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000029"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000029"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000031">
         <rdfs:label xml:lang="en">captive bolt gun shooting euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000029"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Shooting</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000032 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000032">
         <rdfs:label xml:lang="en">isoflurane inhalant euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000024"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000033 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000033">
         <rdfs:label xml:lang="en">sevoflurane inhalant euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000024"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000034 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
-        <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000034">
         <rdfs:label xml:lang="en">carbon dioxide inhalant euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000024"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
+        <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000035 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000023"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000035">
         <rdfs:label xml:lang="en">barbiturate intravenous anesthetic euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000023"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000036 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000023"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000036">
         <rdfs:label xml:lang="en">somulose intravenous anesthetic euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000023"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000037 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000023"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000037">
         <rdfs:label xml:lang="en">tributame intravenous anesthetic euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000023"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Intravenous_Anesthetic</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000038 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
+    <owl:Class rdf:about="&obo;OLAM_0000038">
+        <rdfs:label xml:lang="en">carbon monoxide inhalant euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000024"/>
         <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">carbon monoxide inhalant euthanasia</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000039 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000024"/>
+    <owl:Class rdf:about="&obo;OLAM_0000039">
+        <rdfs:label xml:lang="en">nitrogen inhalant euthanasia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000024"/>
         <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">nitrogen inhalant euthanasia</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000041 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <owl:Class rdf:about="&obo;OLAM_0000041">
+        <rdfs:label xml:lang="en">animal welfare</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <obo:IAO_0000115>A planned process that supports the well-being of nonhuman animal</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">animal welfare</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000042 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+    <owl:Class rdf:about="&obo;OLAM_0000042">
+        <rdfs:label xml:lang="en">animal welfare act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000041"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">animal welfare act</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000044 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+    <owl:Class rdf:about="&obo;OLAM_0000044">
+        <rdfs:label xml:lang="en">laboratory animal welfare act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000042"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000041"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OLAM_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal welfare act</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000049 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+    <owl:Class rdf:about="&obo;OLAM_0000049">
         <rdfs:label xml:lang="en">USA animal welfare act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000042"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000050 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+    <owl:Class rdf:about="&obo;OLAM_0000050">
         <rdfs:label xml:lang="en">UK animal welfare act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000042"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000051 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
+    <owl:Class rdf:about="&obo;OLAM_0000051">
         <rdfs:label xml:lang="en">Ireland animal welfare act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000042"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000052 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000052">
         <rdfs:label xml:lang="en">Indian animal welfare act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000042"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000054 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <owl:Class rdf:about="&obo;OLAM_0000054">
         <rdfs:label xml:lang="en">laboratory animal reduction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000055 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <owl:Class rdf:about="&obo;OLAM_0000055">
         <rdfs:label xml:lang="en">laboratory animal refinement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000056 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <owl:Class rdf:about="&obo;OLAM_0000056">
         <rdfs:label xml:lang="en">laboratory animal replacement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000057 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000042"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000057">
         <rdfs:label xml:lang="en">United Nations animal welfare act</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OLAM_0000042"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_welfare</obo:IAO_0000119>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000059 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000059">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+    <owl:Class rdf:about="&obo;OLAM_0000059">
         <rdfs:label xml:lang="en">adverse event in animal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OAE_0000001"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000060 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <obo:IAO_0000118>IACUC</obo:IAO_0000118>
-        <obo:IAO_0000119>https://www.nabr.org/animal-welfare-2/animal-welfare-in-practice/functions-of-the-iacuc/</obo:IAO_0000119>
+    <owl:Class rdf:about="&obo;OLAM_0000060">
         <rdfs:label xml:lang="en">Institutional Animal Care and Use Committee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
+        <obo:IAO_0000119>https://www.nabr.org/animal-welfare-2/animal-welfare-in-practice/functions-of-the-iacuc/</obo:IAO_0000119>
+        <obo:IAO_0000118>IACUC</obo:IAO_0000118>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PR_000002310 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000002310">
+    <rdf:Description rdf:about="&obo;PR_000002310">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+                <owl:onProperty rdf:resource="&obo;OLAM_0000020"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="&obo;RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -955,59 +972,59 @@
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000040 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000040">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000040">
+        <rdf:type rdf:resource="&obo;OBI_0000245"/>
+        <rdfs:label xml:lang="en">American Veterinary Medical Association</rdfs:label>
         <obo:IAO_0000118>AVMA</obo:IAO_0000118>
         <obo:IAO_0000119>https://www.avma.org</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">American Veterinary Medical Association</rdfs:label>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000043 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000043">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000051"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/An_Act_against_Plowing_by_the_Tayle,_and_pulling_the_Wooll_off_living_Sheep</obo:IAO_0000119>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000043">
+        <rdf:type rdf:resource="&obo;OLAM_0000051"/>
         <rdfs:label xml:lang="en">An Act against Plowing by the Tayle, and pulling the Wooll off living Sheep</rdfs:label>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/An_Act_against_Plowing_by_the_Tayle,_and_pulling_the_Wooll_off_living_Sheep</obo:IAO_0000119>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000045 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000045">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000049"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_Welfare_Act_2006</obo:IAO_0000119>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000045">
+        <rdf:type rdf:resource="&obo;OLAM_0000049"/>
         <rdfs:label xml:lang="en">Animal Welfare Act 2006</rdfs:label>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_Welfare_Act_2006</obo:IAO_0000119>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000046 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000046">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000051"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cruelty_to_Animals_Act_1835</obo:IAO_0000119>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000046">
+        <rdf:type rdf:resource="&obo;OLAM_0000051"/>
         <rdfs:label xml:lang="en">Cruelty to Animals Act 1835</rdfs:label>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cruelty_to_Animals_Act_1835</obo:IAO_0000119>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000047 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000047">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000050"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Protection_of_Animals_Act_1911</obo:IAO_0000119>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000047">
+        <rdf:type rdf:resource="&obo;OLAM_0000050"/>
         <rdfs:label xml:lang="en">Protection of Animals Act 1911</rdfs:label>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Protection_of_Animals_Act_1911</obo:IAO_0000119>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000048 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000048">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000049"/>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000048">
+        <rdf:type rdf:resource="&obo;OLAM_0000049"/>
         <rdfs:label xml:lang="en">Animal Welfare Act of 1966</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1015,25 +1032,25 @@
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000053 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000053">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000052"/>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Prevention_of_Cruelty_to_Animals_Act</obo:IAO_0000119>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000053">
+        <rdf:type rdf:resource="&obo;OLAM_0000052"/>
         <rdfs:label xml:lang="en">Prevention of Cruelty to Animals Act</rdfs:label>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Prevention_of_Cruelty_to_Animals_Act</obo:IAO_0000119>
     </owl:NamedIndividual>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OLAM_0000058 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OLAM_0000058">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000057"/>
+    <owl:NamedIndividual rdf:about="&obo;OLAM_0000058">
+        <rdf:type rdf:resource="&obo;OLAM_0000057"/>
+        <rdfs:label xml:lang="en">Universal Declaration on Animal Welfare</rdfs:label>
         <obo:IAO_0000118>UDAW</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Universal_Declaration_on_Animal_Welfare</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Universal Declaration on Animal Welfare</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
