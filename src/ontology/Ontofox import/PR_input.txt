@@ -8,15 +8,22 @@ PR
 http://purl.obolibrary.org/obo/PR_000000001 #protein
 http://purl.obolibrary.org/obo/PR_000002310 #caspase-10
 
+http://purl.obolibrary.org/obo/PR_000001044 #CFTR: cystic fibrosis transmembrane conductance regulator 
+includeAllChildren 
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PR_000000001 #protein
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
 
 [Source term retrieval setting]
-includeComputedIntermediates
+includeAllIntermediates
+
+#includeComputedIntermediates
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+includeAllAxiomsRecursively 
+
+#includeAllAnnotationProperties
 
 
 [Source annotation URIs to be excluded]
