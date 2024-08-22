@@ -23,12 +23,13 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/PR_imports.owl"/>
         <dc:contributor>Bob Dysko</dc:contributor>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">7-29-2024</dc:date>
+        <dc:creator>Jie Zheng</dc:creator>
+        <dc:date xml:lang="en">8-22-2024</dc:date>
         <dc:description xml:lang="en">OLAM is a biomedical ontology in the area of laboratory animal medicine.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Laboratory animal medicine</dc:subject>
         <dc:title xml:lang="en">OLAM: Ontology of Laboratory Animal Medicine</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.20</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -279,9 +280,10 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115>a role that inheres in an animal that is used as a model for human or animal research.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118>animal model role</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal role</rdfs:label>
+        <rdfs:label xml:lang="en">laboratory animal model role</rdfs:label>
     </owl:Class>
     
 
@@ -1174,6 +1176,24 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000009"/>
         <rdfs:label xml:lang="en">lab animal for COVID-19 research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000001"/>
+        <rdfs:label xml:lang="en">laboratory animal model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:label xml:lang="en">laboratory animal establishment process</rdfs:label>
     </owl:Class>
     
 
