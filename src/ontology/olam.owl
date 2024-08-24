@@ -22,14 +22,14 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OPMI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/PR_imports.owl"/>
         <dc:contributor>Bob Dysko</dc:contributor>
-        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator>Jie Zheng</dc:creator>
-        <dc:date xml:lang="en">8-22-2024</dc:date>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <dc:date xml:lang="en">8-24-2024</dc:date>
         <dc:description xml:lang="en">OLAM is a biomedical ontology in the area of laboratory animal medicine.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Laboratory animal medicine</dc:subject>
         <dc:title xml:lang="en">OLAM: Ontology of Laboratory Animal Medicine</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.21</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -150,7 +150,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -163,7 +163,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -176,7 +176,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -189,7 +189,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -202,7 +202,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -215,7 +215,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -228,7 +228,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -241,7 +241,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -254,20 +254,19 @@
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An animal organism that is used as an animal model of a human or animal disease in translational and biomedical research.</obo:IAO_0000115>
+        <obo:IAO_0000115>An animal that is used in a laboratory setting for a wide range of research, teaching, and testing purposes. It is often used as an animal model of a human or animal disease in translational and biomedical research.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000118>animal model</obo:IAO_0000118>
-        <obo:IAO_0000118>laboratory animal model</obo:IAO_0000118>
+        <obo:IAO_0000118>lab animal</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
         <rdfs:label xml:lang="en">laboratory animal</rdfs:label>
     </owl:Class>
@@ -277,13 +276,18 @@
     <!-- http://purl.obolibrary.org/obo/OLAM_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115>a role that inheres in an animal that is used as a model for human or animal research.</obo:IAO_0000115>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A laboratory animal that is used to replicate a human or other organisms&apos; disease(s) or condition(s) for in-depth scientific research, often involving genetic or physiological modifications. .</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000118>animal model role</obo:IAO_0000118>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal model role</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>animal model</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">laboratory animal model</rdfs:label>
     </owl:Class>
     
 
@@ -388,7 +392,7 @@
     <!-- http://purl.obolibrary.org/obo/OLAM_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
         <obo:IAO_0000115>a laboratory animal that is used for human disease research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.sciencedirect.com/book/9780124158948/animal-models-for-the-study-of-human-disease</obo:IAO_0000119>
@@ -1183,8 +1187,13 @@
     <!-- http://purl.obolibrary.org/obo/OLAM_0000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000001"/>
-        <rdfs:label xml:lang="en">laboratory animal model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>a role that inheres in an animal that is used as a model for human or animal research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>animal model role</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Comparative_medicine</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">laboratory animal model role</rdfs:label>
     </owl:Class>
     
 
@@ -1193,7 +1202,32 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>A planned process that results in the establishment of a lab animal model.</obo:IAO_0000115>
+        <dc:creator>Jie Zheng</dc:creator>
+        <dc:creator>Oliver He</dc:creator>
         <rdfs:label xml:lang="en">laboratory animal establishment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+        <rdfs:label xml:lang="en">genetically modified lab animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000087"/>
+        <obo:IAO_0000115>A mouse (Mus musculus) that has had its genome altered through the use of genetic engineering techniques. Genetically modified mice are commonly used for research or as animal models of human diseases and are also used for research on genes.</obo:IAO_0000115>
+        <obo:IAO_0000118>GEMM</obo:IAO_0000118>
+        <obo:IAO_0000118>genetically engineered mouse model</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Genetically_modified_mouse</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">genetically modified mouse</rdfs:label>
     </owl:Class>
     
 
@@ -1310,5 +1344,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
