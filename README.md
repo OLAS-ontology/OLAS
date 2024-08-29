@@ -13,3 +13,14 @@ http://bioportal.bioontology.org/ontologies/OLAM (note: will be changed later to
 
 We appreciate any feedback and collaboration from the community. Thanks!
 
+## Developers
+- Jie Zheng
+- Oliver He
+
+## Contributors:
+- Bob Dysco
+- Bill King
+- Zach Freeman
+- Jean Nemzek
+  
+  
