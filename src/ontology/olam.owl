@@ -22,14 +22,15 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/OPMI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olam/PR_imports.owl"/>
         <dc:contributor>Bob Dysko</dc:contributor>
+        <dc:creator xml:lang="en">Jean Nemzek</dc:creator>
         <dc:creator>Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">8-24-2024</dc:date>
+        <dc:date xml:lang="en">09-05-2024</dc:date>
         <dc:description xml:lang="en">OLAM is a biomedical ontology in the area of laboratory animal medicine.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">Laboratory animal medicine</dc:subject>
-        <dc:title xml:lang="en">OLAM: Ontology of Laboratory Animal Medicine</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.24</owl:versionInfo>
+        <dc:title xml:lang="en">OLAS: Ontology of Laboratory Animal Science</dc:title>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -283,7 +284,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A laboratory animal that is used to replicate a human or other organisms&apos; disease(s) or condition(s) for in-depth scientific research, often involving genetic or physiological modifications. .</obo:IAO_0000115>
+        <obo:IAO_0000115>A laboratory animal that is used to replicate a human or other organisms&apos; disease(s) or condition(s) for in-depth scientific research, often involving genetic or physiological modifications.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>animal model</obo:IAO_0000118>
@@ -1228,6 +1229,188 @@
         <obo:IAO_0000118>genetically engineered mouse model</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Genetically_modified_mouse</obo:IAO_0000119>
         <rdfs:label xml:lang="en">genetically modified mouse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000002"/>
+        <rdfs:label xml:lang="en">sepsis animal model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000089"/>
+        <obo:IAO_0000115>A sepsis animal model that uses lipopolysaccharide (LPS) to mimic the hyperinflammation of early sepsis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jean Nemzek, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960474/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">endotoxemia animal mode of sepsis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000089"/>
+        <rdfs:label xml:lang="en">surgical animal model of sepsis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000089"/>
+        <rdfs:label xml:lang="en">bacterial sepsis animal model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000092"/>
+        <rdfs:label xml:lang="en">Gram+ bacterial sepsis animal model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000092"/>
+        <rdfs:label xml:lang="en">Gram- bacterial sepsis animal model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000089"/>
+        <obo:IAO_0000118>sepsis small animal model</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">small animal sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000089"/>
+        <rdfs:label xml:lang="en">large animal sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000095"/>
+        <rdfs:label xml:lang="en">mouse sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000095"/>
+        <rdfs:label xml:lang="en">rat sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000096"/>
+        <rdfs:label xml:lang="en">pig sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000096"/>
+        <obo:IAO_0000118>non-human primate animal model of sepsis</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">non-human primate sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000100"/>
+        <rdfs:label xml:lang="en">macaque sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000100"/>
+        <rdfs:label xml:lang="en">baboon sepsis model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000091"/>
+        <obo:IAO_0000115>A surgical sepsis animal model that uses a cecal ligation and puncture surgical procedure to replicate a sepsis conditiion for further investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jean Nemzek, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Cecal Ligation Puncture sepsis animal model</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/22776195/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">CLP sepsis animal model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000097"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000103"/>
+        <rdfs:label xml:lang="en">CLP sepsis mouse model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000098"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000103"/>
+        <rdfs:label xml:lang="en">CLP sepsis rat model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000090"/>
+        <rdfs:label xml:lang="en">endotoxemia sepsis mouse model</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAM_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAM_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAM_0000090"/>
+        <rdfs:label xml:lang="en">endotoxemia sepsis rat model</rdfs:label>
     </owl:Class>
     
 
