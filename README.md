@@ -15,6 +15,7 @@ We appreciate any feedback and collaboration from the community. Thanks!
 
 ## Developers
 - Jie Zheng
+- Leo Yeh
 - Oliver He
 
 ## Contributors:
