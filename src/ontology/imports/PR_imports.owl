@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/olam/PR_imports.owl#"
-     xml:base="http://purl.obolibrary.org/obo/olam/PR_imports.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/olas/PR_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/olas/PR_imports.owl"
      xmlns:view="http://zfin.org/action/marker/view/"
      xmlns:pr="http://purl.obolibrary.org/obo/pr#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,7 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olam/PR_imports.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olas/PR_imports.owl"/>
     
 
 
