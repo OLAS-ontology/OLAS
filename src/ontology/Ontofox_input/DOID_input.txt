@@ -8,6 +8,12 @@ DOID
 http://purl.obolibrary.org/obo/DOID_399 #tuberculosis
 http://purl.obolibrary.org/obo/DOID_14456 #Brucella melitensis brucellosis
 http://purl.obolibrary.org/obo/DOID_14457 #Brucella abortus brucellosis
+http://purl.obolibrary.org/obo/DOID_848 #arthritis
+http://purl.obolibrary.org/obo/DOID_1936 #atherosclerosis
+http://purl.obolibrary.org/obo/DOID_162 #cancer
+http://purl.obolibrary.org/obo/DOID_9351 #diabetes mellitus
+http://purl.obolibrary.org/obo/DOID_0040088 #autoimmune uveitis
+http://purl.obolibrary.org/obo/DOID_640 #encephalomyelitis
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease

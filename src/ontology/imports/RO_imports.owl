@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/olas/RO_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/olas/RO_imports.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olas/RO_imports.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
+        <obo:IAO_0000115>An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context.</obo:IAO_0000115>
+        <rdfs:label>temporal interpretation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111 xml:lang="en">preceded by</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">is preceded by</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">preceded_by</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</terms:source>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">preceded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002160 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002160">
+        <obo:IAO_0000112>lactation SubClassOf &apos;only in taxon&apos; some &apos;Mammalia&apos;</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.</obo:IAO_0000115>
+        <obo:IAO_0000116>The original intent was to treat this as a macro that expands to &apos;in taxon&apos; only ?Y - however, this is not necessary if we instead have supplemental axioms that state that each pair of sibling tax have a disjointness axiom using the &apos;in taxon&apos; property - e.g.
+
+ &apos;in taxon&apos; some Eukaryota DisjointWith &apos;in taxon&apos; some Eubacteria</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/17921072"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20973947"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:label>only in taxon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/wiki/Taxon-constraints"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215">
+        <obo:IAO_0000112>mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)</obo:IAO_0000112>
+        <obo:IAO_0000112>osteoclast SubClassOf &apos;capable of&apos; some &apos;bone resorption&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>has function realized in</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20123131"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
+        <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">capable of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002330 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002330">
+        <obo:IAO_0000115>holds between two entities when some genome-level process such as gene expression is involved. This includes transcriptional, spliceosomal events. These relations can be used between either macromolecule entities (such as regions of nucleic acid) or between their abstract informational counterparts.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving the genome of an organism</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:label xml:lang="en">genomically related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
+        <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/RO_0002259"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/ro/subsets#ro-eco"/>
+        <rdfs:label xml:lang="en">output of</rdfs:label>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

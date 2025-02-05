@@ -14,13 +14,19 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olas-edit.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/DOID_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/GO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/IAO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/NCBITaxon_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/OAE_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/OBI_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/OGMS_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/OPMI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/PR_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/RO_imports.owl"/>
         <dc:contributor>Bob Dysko</dc:contributor>
         <dc:creator xml:lang="en">Jean Nemzek</dc:creator>
         <dc:creator>Jie Zheng</dc:creator>

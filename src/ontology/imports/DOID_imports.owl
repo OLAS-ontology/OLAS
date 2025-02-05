@@ -2,10 +2,12 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/olas/DOID_imports.owl#"
      xml:base="http://purl.obolibrary.org/obo/olas/DOID_imports.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olas/DOID_imports.owl"/>
     
@@ -19,55 +21,66 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
-        <rdfs:label>has_related_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
-        <rdfs:label>textual definition</rdfs:label>
-        <rdfs:label>definition</rdfs:label>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label>database_cross_reference</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
-        <rdfs:label>in_subset</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
-        <rdfs:label>has_alternative_id</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:label>has_obo_namespace</rdfs:label>
-        <rdfs:comment>disease_ontology</rdfs:comment>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:label xml:lang="en">label</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label>has_exact_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
-        <rdfs:label>id</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
     
 
 
@@ -88,16 +101,63 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_0040088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0040088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050155"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0060030"/>
+        <obo:IAO_0000115 xml:lang="en">An autoimmune disease of eyes, ear, nose and throat that is located_in the uvea.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0040088</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_IEDB_slim"/>
+        <rdfs:label xml:lang="en">autoimmune uveitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <obo:IAO_0000115 xml:lang="en">A nervous system disease which is located in a part of the nervous system responsible for processing sensory information that consists of sensory receptors, neural pathways, and parts of the brain involved in sensory perception. Commonly recognized sensory systems are those for vision, hearing, somatic sensation (touch), taste and olfaction (smell).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0050155</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_AGR_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_GXD_slim"/>
+        <rdfs:label xml:lang="en">sensory system disease</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_0050338 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0050338">
-        <rdfs:label>primary bacterial infectious disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <oboInOwl:id>DOID:0050338</oboInOwl:id>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000115>A bacterial infectious disease that results_in infection by bacteria as a result of their presence or activity within the normal, healthy host, and their intrinsic virulence is, in part, a necessary consequence of their need to reproduce and spread.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_FlyBase_slim"/>
+        <obo:IAO_0000115 xml:lang="en">A bacterial infectious disease that results_in infection by bacteria as a result of their presence or activity within the normal, healthy host, and their intrinsic virulence is, in part, a necessary consequence of their need to reproduce and spread.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0050338</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_infectious_disease_slim"/>
+        <rdfs:label xml:lang="en">primary bacterial infectious disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0060030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0060030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050155"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_438"/>
+        <obo:IAO_0000115 xml:lang="en">An autoimmune disease located_in eyes, located_in ears, located_in nose and located_in throat.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:0060030</oboInOwl:id>
+        <rdfs:label xml:lang="en">autoimmune disease of eyes, ear, nose and throat</rdfs:label>
     </owl:Class>
     
 
@@ -105,31 +165,31 @@
     <!-- http://purl.obolibrary.org/obo/DOID_11077 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_11077">
-        <rdfs:label>brucellosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050338"/>
-        <oboInOwl:id>DOID:11077</oboInOwl:id>
-        <oboInOwl:hasDbXref>GARD:5966</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ICD9CM:023.9</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0006309</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ICD9CM:023</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>undulant fever</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasDbXref>ICD10CM:A23.9</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym>Bang&#39;s disease</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym>Maltese fever</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A primary bacterial infectious disease that is caused by the bacteria of the genus Brucella, when humans come in contact with contaminated animals or animal products or ingestion of infected food products. The disease has_symptom fever, has_symptom sweat, has_symptom headache, has_symptom back pain, has_symptom physical weakness, has_symptom joint pain and has_symptom fatigue.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>Gibraltar fever</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2018_03_01:75702008</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym>Mediterranean fever</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasDbXref>ICD10CM:A23</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 xml:lang="en">A primary bacterial infectious disease that is caused by the bacteria of the genus Brucella, when humans come in contact with contaminated animals or animal products or ingestion of infected food products. The disease has_symptom fever, has_symptom sweat, has_symptom headache, has_symptom back pain, has_symptom physical weakness, has_symptom joint pain and has_symptom fatigue.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
         <oboInOwl:hasAlternativeId>DOID:0050060</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>GARD:5966</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:A23</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:023</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D002006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCI:C84602</oboInOwl:hasDbXref>
-        <oboInOwl:hasRelatedSynonym>Malta fever</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:154296006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0006309</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Maltese fever</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">undulant fever</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">Bang&apos;s disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">Gibraltar fever</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">Malta fever</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">Mediterranean fever</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>DOID:11077</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_infectious_disease_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_rare_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#gram-negative_bacterial_infectious_disease"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#zoonotic_infectious_disease"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <rdfs:label xml:lang="en">brucellosis</rdfs:label>
     </owl:Class>
     
 
@@ -137,18 +197,19 @@
     <!-- http://purl.obolibrary.org/obo/DOID_14456 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_14456">
-        <rdfs:label>Brucella melitensis brucellosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
-        <oboInOwl:hasDbXref>ICD9CM:023.0</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0302362</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2018_03_01:30789005</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 xml:lang="en">A brucellosis that involves an infection caused by Brucella melitensis [NCBITaxon:29459] in cattle, goats, sheep and humans. The disease has_symptom fever, has_symptom malaise, has_symptom anorexia, has_symptom limb pain and has_symptom back pain.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
         <oboInOwl:hasDbXref>ICD10CM:A23.0</oboInOwl:hasDbXref>
-        <oboInOwl:id>DOID:14456</oboInOwl:id>
-        <obo:IAO_0000115>A brucellosis that involves an infection caused by Brucella melitensis [NCBITaxon:29459] in cattle, goats, sheep and humans. The disease has_symptom fever, has_symptom malaise, has_symptom anorexia, has_symptom limb pain and has_symptom back pain.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM:023.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:186305007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0302362</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:14456</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_infectious_disease_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#gram-negative_bacterial_infectious_disease"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#zoonotic_infectious_disease"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <rdfs:label xml:lang="en">Brucella melitensis brucellosis</rdfs:label>
     </owl:Class>
     
 
@@ -156,19 +217,73 @@
     <!-- http://purl.obolibrary.org/obo/DOID_14457 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_14457">
-        <rdfs:label>Brucella abortus brucellosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
-        <oboInOwl:hasDbXref>ICD9CM:023.1</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasDbXref>MESH:D002007</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 xml:lang="en">A brucellosis that involves an infection caused by Brucella abortus [NCBITaxon:235] in cattle and humans. The disease has_symptom fever, has_symptom chills, has_symptom sweats, has_symptom weight loss, has_symptom malaise, has_symptom headaches, has_symptom myalgia, and has_symptom arthralgia.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
         <oboInOwl:hasDbXref>ICD10CM:A23.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:023.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D002007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:427795000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS_CUI:C0302363</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DOID:14457</oboInOwl:id>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2018_03_01:9060000</oboInOwl:hasDbXref>
-        <obo:IAO_0000115>A brucellosis that involves an infection caused by Brucella abortus [NCBITaxon:235] in cattle and humans. The disease has_symptom fever, has_symptom chills, has_symptom sweats, has_symptom weight loss, has_symptom malaise, has_symptom headaches, has_symptom myalgia, and has_symptom arthralgia.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_infectious_disease_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#gram-negative_bacterial_infectious_disease"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#zoonotic_infectious_disease"/>
+        <rdfs:label xml:lang="en">Brucella abortus brucellosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115 xml:lang="en">A disease of cellular proliferation that is malignant and primary, characterized by uncontrolled cellular proliferation, local cell invasion and metastasis.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasDbXref>ICD10CM:C80.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:199</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:8000/3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009369</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C9305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:269513004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0006826</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">malignant neoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">malignant tumor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">primary cancer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:162</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_AGR_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_FlyBase_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_GXD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_cancer_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:comment xml:lang="en">Updating out dated UMLS CUI.</rdfs:comment>
+        <rdfs:label xml:lang="en">cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1936 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1936">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasDbXref>EFO:0003914</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD10CM:I70</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:440</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D050197</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C35768</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:155414001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0004153</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:1936</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">atherosclerosis</rdfs:label>
+        <skos:exactMatch>MESH:D050197</skos:exactMatch>
     </owl:Class>
     
 
@@ -176,23 +291,26 @@
     <!-- http://purl.obolibrary.org/obo/DOID_399 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_399">
-        <rdfs:label>tuberculosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_0050338"/>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasDbXref>MESH:D014375</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 xml:lang="en">A primary bacterial infectious disease that is located_in lungs, located_in lymph nodes, located_in pericardium, located_in brain, located_in pleura or located_in gastrointestinal tract, has_material_basis_in Mycobacterium tuberculosis, which is transmitted_by droplets released into the air when an infected person coughs or sneezes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasAlternativeId>DOID:10096</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>DOID:12688</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>DOID:12691</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId>DOID:10096</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0041295</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId>DOID:415</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>DOID:9901</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>DOID:9902</oboInOwl:hasAlternativeId>
-        <obo:IAO_0000115>A primary bacterial infectious disease that is located_in lungs, located_in lymph nodes, located_in pericardium, located_in brain, located_in pleura or located_in gastrointestinal tract, has_material_basis_in Mycobacterium tuberculosis, which is transmitted_by droplets released into the air when an infected person coughs or sneezes.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>DOID:415</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2018_03_01:15202009</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GARD:7827</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D014375</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:15202009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0041295</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DOID:399</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_infectious_disease_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_rare_slim"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#gram-positive_bacterial_infectious_disease"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <rdfs:label xml:lang="en">tuberculosis</rdfs:label>
+        <skos:exactMatch>MESH:D014376</skos:exactMatch>
     </owl:Class>
     
 
@@ -200,21 +318,146 @@
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
-        <rdfs:label>disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <oboInOwl:hasDbXref>UMLS_CUI:C0012634</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>SNOMEDCT_US_2018_03_01:64572001</oboInOwl:hasDbXref>
-        <oboInOwl:id>DOID:4</oboInOwl:id>
-        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000115>A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <obo:IAO_0000115 xml:lang="en">A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C2991</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:64572001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0012634</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:4</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_RAD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_438">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <obo:IAO_0000115 xml:lang="en">An autoimmune disease affecting the nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasDbXref>MESH:D020274</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C99383</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0751871</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym xml:lang="en">autoimmune nervous system disorder</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>DOID:438</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">autoimmune disease of the nervous system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_863"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasDbXref>MESH:D004679</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C34580</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:154991009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0014070</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Encephalitis &amp;/or myelitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:640</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">encephalomyelitis</rdfs:label>
+        <skos:exactMatch>MESH:D004679</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_7 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_7">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115 xml:lang="en">A disease that manifests in a defined anatomical structure.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasAlternativeId>DOID:1</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:2</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:5</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:71</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:72</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>DOID:8</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:7</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_RAD_slim"/>
+        <rdfs:label xml:lang="en">disease of anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_848 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_848">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 xml:lang="en">A bone inflammation disease that involves a response to irritation or injury, characterized by joint pain, swelling, stiffness located_in joint.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasDbXref>ICD10CM:M19.90</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D001168</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C2883</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:372091005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0003864</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Inflammatory disorder of joint</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:848</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">arthritis</rdfs:label>
+        <skos:exactMatch>MESH:D001168</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_863 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_863">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_7"/>
+        <obo:IAO_0000115 xml:lang="en">A disease of anatomical entity that is located_in the central nervous system or located_in the peripheral nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasDbXref>ICD10CM:G98</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:349.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D009422</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C26835</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:155262005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0027765</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:863</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_CFDE_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_GXD_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_MGI_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">nervous system disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_9351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <obo:IAO_0000115 xml:lang="en">A glucose metabolism disease that is characterized by chronic hyperglycaemia with disturbances of carbohydrate, fat and protein metabolism resulting from defects in insulin secretion, insulin action, or both.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
+        <oboInOwl:hasAlternativeId>DOID:0081062</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>ICD10CM:E08-E13</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM:250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003920</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCI:C2985</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT_US_2023_03_01:267467004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0011849</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">diabetes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>DOID:9351</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
+        <rdfs:label xml:lang="en">diabetes mellitus</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

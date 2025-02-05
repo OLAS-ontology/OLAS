@@ -4,9 +4,12 @@
     <uri name="http://purl.obolibrary.org/obo/olas-merged.owl" uri="olas-merged.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/DOID_imports.owl" uri="imports/DOID_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/GO_imports.owl" uri="imports/GO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/olas/IAO_imports.owl" uri="imports/IAO_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/NCBITaxon_imports.owl" uri="imports/NCBITaxon_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/OAE_imports.owl" uri="imports/OAE_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/OBI_imports.owl" uri="imports/OBI_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/olas/OGMS_imports.owl" uri="imports/OGMS_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/OPMI_imports.owl" uri="imports/OPMI_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/PR_imports.owl" uri="imports/PR_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/olas/RO_imports.owl" uri="imports/RO_imports.owl"/>
 </catalog>

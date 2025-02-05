@@ -14,6 +14,8 @@ includeAllChildren
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PR_000000001 #protein
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+http://purl.obolibrary.org/obo/SO_0000110 #sequence_feature
+subClassOf http://purl.obolibrary.org/obo/BFO_0000002 #continuant
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -24,6 +26,5 @@ includeAllIntermediates
 includeAllAxiomsRecursively 
 
 #includeAllAnnotationProperties
-
 
 [Source annotation URIs to be excluded]

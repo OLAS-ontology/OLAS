@@ -7,9 +7,15 @@ GO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/GO_0006955 #immune response
 http://purl.obolibrary.org/obo/GO_0008150 #biological process
+http://purl.obolibrary.org/obo/GO_0005216
+http://purl.obolibrary.org/obo/GO_0005254
+http://purl.obolibrary.org/obo/GO_0006412
+http://purl.obolibrary.org/obo/GO_0015267
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/GO_0008150 # biological process
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/GO_0003674 #molecular_function
 subClassOf http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]

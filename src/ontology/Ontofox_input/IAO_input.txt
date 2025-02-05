@@ -1,0 +1,47 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/olas/IAO_imports.owl
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000109 #measurement datum
+http://purl.obolibrary.org/obo/IAO_0000100 #data set
+http://purl.obolibrary.org/obo/IAO_0000144 #conclusion textual entity
+http://purl.obolibrary.org/obo/IAO_0000303 #institutional identification
+http://purl.obolibrary.org/obo/IAO_0000422 #postal address
+http://purl.obolibrary.org/obo/IAO_0000028 #symbol
+http://purl.obolibrary.org/obo/IAO_0000005 #objective specification
+http://purl.obolibrary.org/obo/IAO_0000033 #directive information entity
+http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
+http://purl.obolibrary.org/obo/IAO_0000007 #action specification
+http://purl.obolibrary.org/obo/IAO_0000572
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030
+subClassOf http://purl.obolibrary.org/obo/BFO_0000031 #generically dependent continuant
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+# object property
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000219 #denotes
+http://purl.obolibrary.org/obo/IAO_0000136 #is about
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000219 #denotes
+subPropertyOf http://purl.obolibrary.org/obo/IAO_0000136
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
