@@ -113,8 +113,8 @@ src/ontology/modules/%.owl: src/ontology/templates/%.csv | build/robot.jar
 	--output $@
 
 # Update all modules
-MODULE_NAMES := lab_model_vaccine\
- olas_objectProp
+MODULE_NAMES := olas_objectProp \
+  lab_model
 
 MODULE_FILES := $(foreach x,$(MODULE_NAMES),src/ontology/modules/$(x).owl)
 
@@ -149,13 +149,22 @@ olas.owl: build/olas-merged.owl
 	--annotation owl:versionInfo "$(TODAY)" \
 	--output $@
 
-robot_report.tsv: build/olas-merged.owl
+olas-base.owl: olas.owl
+	$(ROBOT) remove \
+	--input $< \
+ 	--base-iri http://purl.obolibrary.org/obo/OLAS_ \
+ 	--axioms external \
+ 	--preserve-structure false \
+	--trim false \
+ 	--output $@
+
+robot_report.tsv: olas-base.owl
 	$(ROBOT) report \
 	--input $< \
         --fail-on none \
 	--output $@
 
-olas_terms.tsv: build/olas-merged.owl
+olas_terms.tsv: olas-base.owl
 	$(ROBOT) query \
 	--input $< \
         --query SPARQL/get_olas_terms.rq $@

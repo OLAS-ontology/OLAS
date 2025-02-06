@@ -12,4 +12,6 @@
     <uri name="http://purl.obolibrary.org/obo/olas/OPMI_imports.owl" uri="imports/OPMI_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/PR_imports.owl" uri="imports/PR_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/RO_imports.owl" uri="imports/RO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/olas/dev/olas_objectProp.owl" uri="modules/olas_objectProp.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/olas/dev/lab_model.owl" uri="modules/lab_model.owl"/>
 </catalog>
