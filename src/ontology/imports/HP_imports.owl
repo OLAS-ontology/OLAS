@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/olas/HP_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/olas/HP_imports.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olas/HP_imports.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115>A phenotypic abnormality.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <oboInOwl:hasDbXref>UMLS:C4021819</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Organ abnormality</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>HP:0000118</oboInOwl:id>
+        <rdfs:comment>This is the root of the phenotypic abnormality subontology of the HPO.</rdfs:comment>
+        <rdfs:label>Phenotypic abnormality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0002715 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0002715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <obo:IAO_0000115>An abnormality of the immune system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <oboInOwl:hasAlternativeId>HP:0003257</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>HP:0003346</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>HP:0010986</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>UMLS:C4021753</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Abnormality of the immune system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Immunological abnormality</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>HP:0002715</oboInOwl:id>
+        <rdfs:comment>The immune system is composed of organs and interdependent cell types that collectively protect the body from infections and from the growth of tumor cells. The organs of the immune system comprise the bone marrow, the spleen, the thymus,the lymph nodes, and the cell types comprise B cells, T cells, natural killer cells, granulocytes,dendritic cells, and macrophages.</rdfs:comment>
+        <rdfs:label>Abnormality of the immune system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0010978 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0010978">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0002715"/>
+        <obo:IAO_0000115>A functional abnormality of the immune system.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-0736-9199"/>
+        <oboInOwl:creation_date>2011-02-07T04:28:55Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>UMLS:C4023616</oboInOwl:hasDbXref>
+        <oboInOwl:id>HP:0010978</oboInOwl:id>
+        <rdfs:label>Abnormality of immune system physiology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0100806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0100806">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HP_0010978"/>
+        <obo:IAO_0000115>Systemic inflammatory response to infection.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
+        <terms:creator rdf:resource="https://orcid.org/0009-0006-4530-3154"/>
+        <oboInOwl:creation_date>2011-06-09T01:05:51Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>UMLS:C0036690</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Infection in blood stream</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>HP:0100806</oboInOwl:id>
+        <rdfs:label>Sepsis</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
