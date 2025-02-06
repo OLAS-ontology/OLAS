@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -16,9 +17,9 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/olas-edit.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/DOID_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/GO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/HP_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/IAO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/NCBITaxon_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/OAE_imports.owl"/>
@@ -27,8 +28,9 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/OPMI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/PR_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/RO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/dev/olas_objectProp.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/dev/lab_model.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/dev/olas_objectProp.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <dc:contributor>Bob Dysko</dc:contributor>
         <dc:creator xml:lang="en">Jean Nemzek</dc:creator>
         <dc:creator>Jie Zheng</dc:creator>
@@ -63,17 +65,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -82,162 +73,21 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10090 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10090">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11320"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11520"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_11552"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10114 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10114">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10141 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10141">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10150 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10150">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_391902 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_391902">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9479 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9479">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9901 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9901">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9986 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9986">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OLAS_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000001">
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000503"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>An animal that is used in a laboratory setting for a wide range of research, teaching, and testing purposes. It is often used as an animal model of a human or animal disease in translational and biomedical research.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>lab animal</obo:IAO_0000118>
@@ -250,11 +100,28 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OLAS_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A laboratory animal that is used to replicate a human or other organisms&apos; disease(s) or condition(s) for in-depth scientific research, often involving genetic or physiological modifications.</obo:IAO_0000115>
@@ -370,7 +237,7 @@
         <obo:IAO_0000115>a laboratory animal that is used for human disease research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.sciencedirect.com/book/9780124158948/animal-models-for-the-study-of-human-disease</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal for human disease research</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human disease research</rdfs:label>
     </owl:Class>
     
 
@@ -394,7 +261,7 @@
         <obo:IAO_0000115>a laboratory animal that is used for tuberculosis disease research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4825961/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal for tuberculosis research</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for tuberculosis research</rdfs:label>
     </owl:Class>
     
 
@@ -404,7 +271,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000009"/>
         <obo:IAO_0000115>a laboratory animal that is used for zoonotic disease research</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">laboratory animal for zoonotic disease research</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for zoonotic disease research</rdfs:label>
     </owl:Class>
     
 
@@ -438,21 +305,21 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000014">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000108"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000108"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a laboratory animal that is used for HIV/AIDS research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/B9780123694089000251</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratory animal for HIV research</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for HIV research</rdfs:label>
     </owl:Class>
     
 
@@ -1033,7 +900,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000009"/>
-        <rdfs:label xml:lang="en">lab animal of human disease pathogenesis</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human disease pathogenesis</rdfs:label>
     </owl:Class>
     
 
@@ -1041,8 +908,25 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000074 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000009"/>
-        <rdfs:label xml:lang="en">lab animal for human vaccine study</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000502"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000502"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for vaccine study</rdfs:label>
     </owl:Class>
     
 
@@ -1051,7 +935,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000075">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000074"/>
-        <rdfs:label xml:lang="en">lab animal of human vaccine efficacy study</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human vaccine efficacy study</rdfs:label>
     </owl:Class>
     
 
@@ -1060,7 +944,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000076">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000074"/>
-        <rdfs:label xml:lang="en">lab animal for human vaccine safety study</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human vaccine safety study</rdfs:label>
     </owl:Class>
     
 
@@ -1075,7 +959,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal of human tuberculosis pathogenesis</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human tuberculosis pathogenesis</rdfs:label>
     </owl:Class>
     
 
@@ -1090,7 +974,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal of human TB vaccine efficacy study</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human TB vaccine efficacy study</rdfs:label>
     </owl:Class>
     
 
@@ -1105,7 +989,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal of human brucellosis vaccine efficacy study</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human brucellosis vaccine efficacy study</rdfs:label>
     </owl:Class>
     
 
@@ -1120,7 +1004,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal for human brucellosis vaccine safety study</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human brucellosis vaccine safety study</rdfs:label>
     </owl:Class>
     
 
@@ -1135,25 +1019,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal of human TB vaccine safety study</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OLAS_0000082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000074"/>
-        <rdfs:label xml:lang="en">lab animal for COVID-19 vaccine study</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OLAS_0000083 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000083">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000009"/>
-        <rdfs:label xml:lang="en">lab animal for COVID-19 research</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human TB vaccine safety study</rdfs:label>
     </owl:Class>
     
 
@@ -1161,8 +1027,8 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115>a role that inheres in an animal that is used as a model for human or animal research.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000503"/>
+        <obo:IAO_0000115>Role that inheres in an animal that is used as a model for human or animal research.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>animal model role</obo:IAO_0000118>
@@ -1209,7 +1075,24 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000089 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000089">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000110"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0100806"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000110"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HP_0100806"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">sepsis animal model</rdfs:label>
     </owl:Class>
     
@@ -1388,6 +1271,62 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000115>Objective specification to indicate a specific disease or condition that lab animal model studied for.</obo:IAO_0000115>
+        <rdfs:label>lab animal model objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000501"/>
+        <rdfs:label>lab animal model for vaccine study objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>Role that inheres in a non-human animal that is used in scientific research.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">laboratory animal role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000502"/>
+        <rdfs:label xml:lang="en">lab animal model for vaccine safety study objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000502"/>
+        <rdfs:label xml:lang="en">lab animal model for vaccine efficacy study objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000501"/>
+        <rdfs:label xml:lang="en">lab animal model for human disease study objective</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PR_000002310 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000002310">
@@ -1500,5 +1439,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 

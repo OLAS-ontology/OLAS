@@ -1,12 +1,12 @@
 ﻿ID,LABEL,Type,Parent,alternative label,definition,term editor,editor note,example of usage,domain,range,term tracker item
 ID,A rdfs:label,TYPE,SP %  SPLIT=|,A alternative label SPLIT=|,A definition SPLIT=|,A term editor SPLIT=|,A editor note SPLIT=|,A example of usage SPLIT=|,DOMAIN,RANGE,A term tracker item SPLIT=|
-OLAS:0000013,animal model for disease,Object property,model for,,An 'expresses' relation that specifies a relation between a DNA vaccine and a  protein antigen to be expressed by the DNA vaccine. ,Oliver He,,,laboratory animal model,disease,
-OLAS:0000017,absent in process,Object property,,,A 'has subunit vaccine antigen' relation that indicates the antigen is protective.,Oliver He,,,,,
+OLAS:0000013,animal model for disease,Object property,model for,,An object property that represents a relation beween an animal model and a disease,Oliver He,,,laboratory animal model,disease,
+OLAS:0000017,absent in process,Object property,,,,Oliver He,,,,,
 OLAS:0000020,absent in location,Object property,,,,Oliver He,,,,,
 OLAS:0000084,model for,Object property,,,,Oliver He,,,laboratory animal model,entity,
 OLAS:0000108,animal model for pathogen,Object property,model for,,,Oliver He|Jie Zheng,,,laboratory animal model,organism,
-OLAS:0000109,model organism,Object property,,,,Oliver He|Jie Zheng,,,,,
-,,,,,,,,,,,
+OLAS:0000109,animal model for study,Object property,model for,,,Oliver He|Jie Zheng,,,laboratory animal model,lab animal model objective,
+OLAS:0000110,animal model for phenotype,Object property,model for,,,Oliver He,,,laboratory animal model,,
 ,,,,,,,,,,,
 ,,,,,,,,,,,
 ,,,,,,,,,,,

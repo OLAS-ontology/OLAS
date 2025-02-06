@@ -51,7 +51,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000084"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000002"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <obo:IAO_0000115>An &apos;expresses&apos; relation that specifies a relation between a DNA vaccine and a  protein antigen to be expressed by the DNA vaccine. </obo:IAO_0000115>
+        <obo:IAO_0000115>An object property that represents a relation beween an animal model and a disease</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <rdfs:label>animal model for disease</rdfs:label>
     </owl:ObjectProperty>
@@ -61,7 +61,6 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000017 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OLAS_0000017">
-        <obo:IAO_0000115>A &apos;has subunit vaccine antigen&apos; relation that indicates the antigen is protective.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <rdfs:label>absent in process</rdfs:label>
     </owl:ObjectProperty>
@@ -104,9 +103,23 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000109 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OLAS_0000109">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000084"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000501"/>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <rdfs:label>model organism</rdfs:label>
+        <rdfs:label>animal model for study</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000110 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OLAS_0000110">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000084"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label>animal model for phenotype</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -143,6 +156,12 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000501"/>
 </rdf:RDF>
 
 

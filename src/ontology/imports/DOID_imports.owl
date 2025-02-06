@@ -95,12 +95,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DOID_0040088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_0040088">
@@ -318,7 +312,7 @@
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
         <obo:IAO_0000115 xml:lang="en">A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
         <oboInOwl:hasDbXref>MESH:D004194</oboInOwl:hasDbXref>
@@ -455,6 +449,12 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus"/>
         <rdfs:label xml:lang="en">diabetes mellitus</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031"/>
 </rdf:RDF>
 
 
