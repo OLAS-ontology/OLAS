@@ -8,8 +8,8 @@ Note that OLAS was previously named OLAM for the Ontology of Laboratory Animal M
 You can post your issues to our OLAS issue tracker: 
 [https://github.com/OLAS-ontology/OLAS/issues](https://github.com/OLAS-ontology/OLAS/issues)
 
-OLAS is now deposited at:
-http://bioportal.bioontology.org/ontologies/OLAM (note: will be changed later to OLAS)
+OLAS was deposited at Bioportal on February 6, 2025:
+http://bioportal.bioontology.org/ontologies/OLAS
 
 We appreciate any feedback and collaboration from the community. Thanks!
 
