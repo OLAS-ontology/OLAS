@@ -8,8 +8,6 @@ Note that OLAS was previously named OLAM for the Ontology of Laboratory Animal M
 You can post your issues to our OLAS issue tracker: 
 [https://github.com/OLAS-ontology/OLAS/issues](https://github.com/OLAS-ontology/OLAS/issues)
 
-OLAS was deposited at Bioportal on February 6, 2025:
-http://bioportal.bioontology.org/ontologies/OLAS
 
 We appreciate any feedback and collaboration from the community. Thanks!
 
@@ -18,10 +16,13 @@ We appreciate any feedback and collaboration from the community. Thanks!
 - Leo Yeh
 - Oliver He
 
-## Contributors:
+## Contributors
 - Bob Dysco
 - Bill King
 - Zach Freeman
 - Jean Nemzek
-  
-  
+
+## News
+- 12/20/2025: OLAS was sent a new ontology request for inclusion in the OBO Foundry, see: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2682
+- 2/6/2025: OLAS was deposited at Bioportal repository: http://bioportal.bioontology.org/ontologies/OLAS
+ 
