@@ -23,6 +23,6 @@ We appreciate any feedback and collaboration from the community. Thanks!
 - Jean Nemzek
 
 ## News
-- 12/20/2025: OLAS was sent a new ontology request for inclusion in the OBO Foundry, see: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2682
+- 2/20/2025: OLAS was sent a new ontology request for inclusion in the OBO Foundry, see: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2682
 - 2/6/2025: OLAS was deposited at Bioportal repository: http://bioportal.bioontology.org/ontologies/OLAS
  
