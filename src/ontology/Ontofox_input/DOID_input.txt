@@ -14,6 +14,7 @@ http://purl.obolibrary.org/obo/DOID_162 #cancer
 http://purl.obolibrary.org/obo/DOID_9351 #diabetes mellitus
 http://purl.obolibrary.org/obo/DOID_0040088 #autoimmune uveitis
 http://purl.obolibrary.org/obo/DOID_640 #encephalomyelitis
+http://purl.obolibrary.org/obo/DOID_1205 #allergic disease
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease

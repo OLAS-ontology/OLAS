@@ -15,12 +15,9 @@ http://purl.obolibrary.org/obo/OBI_0000070 #assay
 http://purl.obolibrary.org/obo/OBI_0100026 #organism
 http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 http://purl.obolibrary.org/obo/OBI_0400171 #animal cage
-http://purl.obolibrary.org/obo/OBI_0000245 #organization
-http://purl.obolibrary.org/obo/OBI_1110049 #allergy	
+http://purl.obolibrary.org/obo/OBI_0000245 #organization	
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/OBI_1110049 #allergy
-subClassOf http://purl.obolibrary.org/obo/OGMS_0000031
 http://purl.obolibrary.org/obo/BFO_0000001 #entity
 
 [Source term retrieval setting]

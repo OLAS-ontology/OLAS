@@ -93,6 +93,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_1205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_1205"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_162 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_162"/>
@@ -1248,12 +1254,6 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9986 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9986"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_1110049 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110049"/>
     
 
 
@@ -11533,7 +11533,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_1110049"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_1205"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
