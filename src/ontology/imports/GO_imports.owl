@@ -189,6 +189,7 @@
         <oboInOwl:hasAlternativeId>GO:0006416</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0006453</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0043037</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-72766</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Translation_(genetics)</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>protein anabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein biosynthesis</oboInOwl:hasExactSynonym>

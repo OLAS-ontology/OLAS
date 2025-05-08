@@ -216,16 +216,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_50047 -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000013 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-        <obo:IAO_0000115>A compound formally derived from ammonia by replacing one, two or three hydrogen atoms by organyl groups.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
-        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>CHEBI:50047</oboInOwl:id>
-        <rdfs:label>organic amino compound</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000013"/>
     
 
 
@@ -404,13 +397,13 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</obo:IAO_0000115>
+        <obo:IAO_0000115>An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
         <oboInOwl:hasExactSynonym>natural protein</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>native protein</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
         <oboInOwl:id>PR:000000001</oboInOwl:id>
-        <rdfs:comment>The definition above excludes protein complexes, which some also consider a protein. Those who wish to refer to a class representing both senses of the word are directed to CHEBI:36080. Note that the definition allows for experimentally-manipulated genes, and allows for artifically-produced derivatives that mimic those found naturally. Proteins (in the sense defined here) that descended from a common ancestor can be classified into families and superfamilies composed of products of evolutionarily-related genes. The domain architecture of a protein is described by the order of its constituent domains. Proteins with the same domains in the same order are defined as homeomorphic [PRO:WCB).</rdfs:comment>
+        <rdfs:comment>Note that the definition allows for experimentally-manipulated genes, and allows for artifically-produced derivatives that mimic those found naturally. Note also that the definition excludes protein complexes, which some also consider a protein. Those who wish to refer to a class representing both senses of the word are directed to PR:000064867 (&quot;protein-containing molecular entity&quot;). Proteins (in the sense defined here) that descended from a common ancestor can be classified into families and superfamilies composed of products of evolutionarily-related genes. The domain architecture of a protein is described by the order of its constituent domains. Proteins with the same domains in the same order are defined as homeomorphic [PRO:WCB).</rdfs:comment>
         <rdfs:label>protein</rdfs:label>
     </owl:Class>
     
@@ -656,7 +649,7 @@
     <!-- http://purl.obolibrary.org/obo/PR_000018263 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000018263">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50047"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pr#has_constituent_monomer"/>
@@ -664,7 +657,7 @@
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.</obo:IAO_0000115>
+        <obo:IAO_0000115>A molecule that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
         <oboInOwl:hasNarrowSynonym>peptide</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>polypeptide</oboInOwl:hasNarrowSynonym>
