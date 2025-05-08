@@ -15,4 +15,5 @@
     <uri name="http://purl.obolibrary.org/obo/olas/RO_imports.owl" uri="imports/RO_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/dev/olas_objectProp.owl" uri="modules/olas_objectProp.owl"/>
     <uri name="http://purl.obolibrary.org/obo/olas/dev/lab_model.owl" uri="modules/lab_model.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/olas/dev/lab_mouse_MGI_strain.owl" uri="modules/lab_mouse_MGI_strain.owl"/>
 </catalog>

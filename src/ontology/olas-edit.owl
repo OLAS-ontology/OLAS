@@ -29,18 +29,19 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/PR_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/RO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/dev/lab_model.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/dev/lab_mouse_MGI_strain.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/olas/dev/olas_objectProp.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
-        <dc:contributor>Bob Dysko</dc:contributor>
+        <dc:contributor xml:lang="en">Bob Dysko</dc:contributor>
         <dc:creator xml:lang="en">Jean Nemzek</dc:creator>
-        <dc:creator>Jie Zheng</dc:creator>
+        <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:creator xml:lang="en">Leo Yeh</dc:creator>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">09-05-2024</dc:date>
         <dc:description xml:lang="en">OLAS is a biomedical ontology in the area of laboratory animal science.</dc:description>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">laboratory animal science</dc:subject>
         <dc:title xml:lang="en">OLAS: Ontology of Laboratory Animal Science</dc:title>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.25</owl:versionInfo>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
 
@@ -234,7 +235,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000002"/>
-        <obo:IAO_0000115>a laboratory animal that is used for human disease research</obo:IAO_0000115>
+        <obo:IAO_0000115>Laboratory animal that is used for human disease research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.sciencedirect.com/book/9780124158948/animal-models-for-the-study-of-human-disease</obo:IAO_0000119>
         <rdfs:label xml:lang="en">lab animal model for human disease research</rdfs:label>
@@ -258,7 +259,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a laboratory animal that is used for tuberculosis disease research</obo:IAO_0000115>
+        <obo:IAO_0000115>Laboratory animal model that is used for tuberculosis disease research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4825961/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">lab animal model for tuberculosis research</rdfs:label>
@@ -270,7 +271,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000009"/>
-        <obo:IAO_0000115>a laboratory animal that is used for zoonotic disease research</obo:IAO_0000115>
+        <obo:IAO_0000115>Laboratory animal model that is used for zoonotic disease research</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lab animal model for zoonotic disease research</rdfs:label>
     </owl:Class>
     
@@ -292,7 +293,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_11077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a laboratory animal that is used for zoonotic brucellosis research</obo:IAO_0000115>
+        <obo:IAO_0000115>Laboratory animal model that is used for zoonotic brucellosis research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Brucellosis</obo:IAO_0000119>
         <rdfs:label xml:lang="en">laboratory animal for brucellosis research</rdfs:label>
@@ -316,7 +317,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_12721"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a laboratory animal that is used for HIV/AIDS research</obo:IAO_0000115>
+        <obo:IAO_0000115>Laboratory animal model that is used for HIV/AIDS research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.sciencedirect.com/science/article/pii/B9780123694089000251</obo:IAO_0000119>
         <rdfs:label xml:lang="en">lab animal model for HIV research</rdfs:label>
@@ -627,7 +628,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000024"/>
-        <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
+        <obo:IAO_0000118>CO inhalant euthanasia</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
         <rdfs:label xml:lang="en">carbon monoxide inhalant euthanasia</rdfs:label>
     </owl:Class>
@@ -638,7 +639,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000024"/>
-        <obo:IAO_0000118>CO2 inhalant euthanasia</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Animal_euthanasia#Inhalants</obo:IAO_0000119>
         <rdfs:label xml:lang="en">nitrogen inhalant euthanasia</rdfs:label>
     </owl:Class>
@@ -786,7 +786,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000011"/>
-        <obo:IAO_0000115>a laboratory animal that is used for study of zoonotic plague disease, which is caused by the bacterium Yersinia pestis</obo:IAO_0000115>
+        <obo:IAO_0000115>Laboratory animal model that is used for study of zoonotic plague disease, which is caused by the bacterium Yersinia pestis</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Plague_(disease)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">laboratory animal for plague research</rdfs:label>
