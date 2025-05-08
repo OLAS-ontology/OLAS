@@ -15,11 +15,6 @@ ERROR	duplicate_label	obo:OLAS_2166076	rdfs:label	C57BL/6J-Ankfn1<nmf9>/J
 ERROR	duplicate_label	obo:OLAS_2183465	rdfs:label	C57BL/6J-Ankfn1<nmf9>/J
 ERROR	duplicate_label	obo:OLAS_2166059	rdfs:label	BALB/cByJ-Nmf31/J
 ERROR	duplicate_label	obo:OLAS_2429921	rdfs:label	BALB/cByJ-Nmf31/J
-ERROR	label_whitespace	obo:OLAS_7577234	rdfs:label	BALB/cJGpt-Sema4d<em2(SEMA4D)Gpt>/Gpt 
-ERROR	label_whitespace	obo:OLAS_7577244	rdfs:label	BALB/cJGpt-Klrb1<em2(KLRB1)Gpt>/Gpt 
-ERROR	label_whitespace	obo:OLAS_7577245	rdfs:label	BALB/cJGpt-Tnfrsf10b<em1(TNFRSF10B)Gpt>/Gpt 
-ERROR	label_whitespace	obo:OLAS_7577264	rdfs:label	BALB/cJGpt-Slamf7<em2(SLAMF7)Gpt>/Gpt 
-ERROR	label_whitespace	obo:OLAS_7577287	rdfs:label	BALB/cJGpt-Adam17<em2(ADAM17)Gpt>/Gpt 
 WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000010	obo:OLAS_0000013	DOID:399
 WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000012	obo:OLAS_0000013	DOID:11077
 WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000014	obo:OLAS_0000108	NCBITaxon:12721
