@@ -48,23 +48,6 @@ build/%_imports.owl: src/ontology/Ontofox_input/%_input.txt | build/robot.jar bu
 src/ontology/imports/PR_imports.owl: build/PR_imports.owl
 	$(ROBOT) remove --input build/PR_imports.owl \
 	--base-iri 'http://purl.obolibrary.org/obo/PR_' \
-	--axioms external \
-        --exclude-term 'http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=1884' \
-        --exclude-term 'http://rgd.mcw.edu/rgdweb/report/gene/main.html?id=2332' \
-        --exclude-term 'http://www.informatics.jax.org/marker/MGI:88388' \
-        --exclude-term 'http://zfin.org/action/marker/view/ZDB-GENE-050517-20' \
-        --exclude-term 'http://purl.obolibrary.org/obo/MOD_00046' \
-        --exclude-term 'http://purl.obolibrary.org/obo/MOD_00160' \
-        --exclude-term MOD:00693 \
-        --exclude-term 'http://purl.obolibrary.org/obo/MOD_00696' \
-        --exclude-term 'http://purl.obolibrary.org/obo/MOD_01148' \
-	--preserve-structure false \
-	--trim false \
-	--output $@
-
-src/ontology/imports/PR_imports.owl: build/PR_imports.owl
-	$(ROBOT) remove --input build/PR_imports.owl \
-	--base-iri 'http://purl.obolibrary.org/obo/PR_' \
 	--base-iri 'http://purl.obolibrary.org/obo/MOD_' \
 	--base-iri 'http://purl.obolibrary.org/obo/CHEBI_' \
 	--base-iri 'http://purl.obolibrary.org/obo/SO_' \
@@ -114,7 +97,8 @@ src/ontology/modules/%.owl: src/ontology/templates/%.csv | build/robot.jar
 
 # Update all modules
 MODULE_NAMES := olas_objectProp \
-  lab_model
+  lab_model \
+  lab_mouse_MGI_strain
 
 MODULE_FILES := $(foreach x,$(MODULE_NAMES),src/ontology/modules/$(x).owl)
 
@@ -164,17 +148,12 @@ robot_report.tsv: olas-base.owl
         --fail-on none \
 	--output $@
 
-olas_terms.tsv: olas-base.owl
-	$(ROBOT) query \
-	--input $< \
-        --query SPARQL/get_olas_terms.rq $@
-
 
 ### 
 #
 # Full build
 .PHONY: all
-all: olas.owl robot_report.tsv olas_terms.tsv
+all: olas.owl olas-base.owl robot_report.tsv
 
 # Remove generated files
 .PHONY: clean
