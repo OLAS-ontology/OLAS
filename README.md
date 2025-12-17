@@ -12,15 +12,18 @@ You can post your issues to our OLAS issue tracker:
 We appreciate any feedback and collaboration from the community. Thanks!
 
 ## Developers
-- Jie Zheng
-- Leo Yeh
-- Oliver He
+- Jie Zheng, University of Michigan
+- Leo Yeh, University of Michigan
+- Oliver He, University of Michigan
+- Spencer Caldwell, LSA, University of Michigan
+- Jack Gryebet, LSA, University of Michigan 
+- Junguk Hur, University of North Dakota
 
 ## Contributors
-- Bob Dysco
-- Bill King
-- Zach Freeman
-- Jean Nemzek
+- Bob Dysco, University of Michigan
+- Bill King, University of Michigan
+- Zach Freeman, University of Michigan
+- Jean Nemzek, University of Michigan
 
 ## News
 - 2/20/2025: OLAS was sent a new ontology request for inclusion in the OBO Foundry, see: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2682
