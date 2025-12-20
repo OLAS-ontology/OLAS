@@ -262,7 +262,7 @@
         <obo:IAO_0000115>Laboratory animal model that is used for tuberculosis disease research</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4825961/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">lab animal model for tuberculosis research</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for human tuberculosis research</rdfs:label>
     </owl:Class>
     
 
@@ -311,6 +311,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000082"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000108"/>
@@ -934,8 +935,14 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000075 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000075">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000505"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000074"/>
-        <rdfs:label xml:lang="en">lab animal model for human vaccine efficacy study</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for vaccine efficacy study</rdfs:label>
     </owl:Class>
     
 
@@ -943,8 +950,14 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000076">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000504"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000074"/>
-        <rdfs:label xml:lang="en">lab animal model for human vaccine safety study</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for vaccine safety study</rdfs:label>
     </owl:Class>
     
 
@@ -953,13 +966,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000077">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000073"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000083"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal model for human tuberculosis pathogenesis</rdfs:label>
+        <rdfs:label xml:lang="en">lab animal model for tuberculosis pathogenesis</rdfs:label>
     </owl:Class>
     
 
@@ -967,14 +981,20 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000078">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000075"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000455"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal model for human TB vaccine efficacy study</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000505"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for TB vaccine efficacy study</rdfs:label>
     </owl:Class>
     
 
@@ -982,7 +1002,7 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000075"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
@@ -997,7 +1017,7 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000080">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000076"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000477"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
@@ -1012,14 +1032,47 @@
     <!-- http://purl.obolibrary.org/obo/OLAS_0000081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000076"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000455"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">lab animal model for human TB vaccine safety study</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000504"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for TB vaccine safety study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000002"/>
+        <obo:IAO_0000115>Laboratory animal that is used for infectious disease research</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/book/9780124158948/animal-models-for-the-study-of-human-disease</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">lab animal model for infectious disease research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000083">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000108"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1773"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000082"/>
+        <rdfs:label xml:lang="en">lab animal model for TB research</rdfs:label>
     </owl:Class>
     
 
@@ -1271,6 +1324,139 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000455 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000083"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000013"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_399"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000502"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for tuberculosis vaccine research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000073"/>
+        <rdfs:label xml:lang="en">lab animal model for HIV pathogenesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000502"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for HIV vaccine research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000473">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000108"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_234"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000082"/>
+        <rdfs:label xml:lang="en">lab animal model for brucellosis research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000473"/>
+        <rdfs:label xml:lang="en">lab animal model for brucellosis pathogenesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000475 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000473"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000502"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for brucellosis vaccine study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000476 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000476">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000475"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000505"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for brucellosis vaccine efficacy study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000475"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000109"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000504"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">lab animal model for brucellosis vaccine safety study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000478 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000475"/>
+        <rdfs:label xml:lang="en">mouse model for brucellosis vaccine study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OLAS_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OLAS_0000475"/>
+        <rdfs:label xml:lang="en">rat model for brucellosis vaccine study</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OLAS_0000501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OLAS_0000501">
@@ -1439,5 +1625,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
