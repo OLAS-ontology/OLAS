@@ -1,23 +1,11 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	obo:OLAS_2429911	rdfs:label	C57BL/6J-Scn8a<6J>/J
-ERROR	duplicate_label	obo:OLAS_2448361	rdfs:label	C57BL/6J-Scn8a<6J>/J
-ERROR	duplicate_label	obo:OLAS_2166069	rdfs:label	C57BL/6J-Scn8a<5J>/J
-ERROR	duplicate_label	obo:OLAS_2183472	rdfs:label	C57BL/6J-Scn8a<5J>/J
-ERROR	duplicate_label	obo:OLAS_2166049	rdfs:label	C57BL/6J-Scn8a<4J>/J
-ERROR	duplicate_label	obo:OLAS_2183462	rdfs:label	C57BL/6J-Scn8a<4J>/J
-ERROR	duplicate_label	obo:OLAS_2166048	rdfs:label	C57BL/6J-Pcdh15<av-5J>/J
-ERROR	duplicate_label	obo:OLAS_2183469	rdfs:label	C57BL/6J-Pcdh15<av-5J>/J
-ERROR	duplicate_label	obo:OLAS_2173886	rdfs:label	C57BL/6J-nmf4/J
-ERROR	duplicate_label	obo:OLAS_2429915	rdfs:label	C57BL/6J-nmf4/J
-ERROR	duplicate_label	obo:OLAS_1861634	rdfs:label	C57BL/6J-Clock<m1Jt>/Nwu
-ERROR	duplicate_label	obo:OLAS_3622461	rdfs:label	C57BL/6J-Clock<m1Jt>/Nwu
-ERROR	duplicate_label	obo:OLAS_2166076	rdfs:label	C57BL/6J-Ankfn1<nmf9>/J
-ERROR	duplicate_label	obo:OLAS_2183465	rdfs:label	C57BL/6J-Ankfn1<nmf9>/J
-ERROR	duplicate_label	obo:OLAS_2166059	rdfs:label	BALB/cByJ-Nmf31/J
-ERROR	duplicate_label	obo:OLAS_2429921	rdfs:label	BALB/cByJ-Nmf31/J
 WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000010	obo:OLAS_0000013	DOID:399
 WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000012	obo:OLAS_0000013	DOID:11077
 WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000014	obo:OLAS_0000108	NCBITaxon:12721
+WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000075	obo:OLAS_0000109	obo:OLAS_0000505
+WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000076	obo:OLAS_0000109	obo:OLAS_0000504
+WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000083	obo:OLAS_0000108	NCBITaxon:1773
+WARN	equivalent_class_axiom_no_genus	obo:OLAS_0000473	obo:OLAS_0000108	NCBITaxon:234
 WARN	missing_definition	obo:OLAS_0000015	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000016	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000017	IAO:0000115	
@@ -73,6 +61,7 @@ WARN	missing_definition	obo:OLAS_0000078	IAO:0000115
 WARN	missing_definition	obo:OLAS_0000079	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000080	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000081	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000083	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000084	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000087	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000089	IAO:0000115	
@@ -118,6 +107,7 @@ WARN	missing_definition	obo:OLAS_0000451	IAO:0000115
 WARN	missing_definition	obo:OLAS_0000452	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000453	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000454	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000455	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000457	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000458	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000459	IAO:0000115	
@@ -132,11 +122,19 @@ WARN	missing_definition	obo:OLAS_0000467	IAO:0000115
 WARN	missing_definition	obo:OLAS_0000468	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000469	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000470	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000471	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000472	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000473	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000474	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000475	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000476	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000477	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000478	IAO:0000115	
+WARN	missing_definition	obo:OLAS_0000479	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000502	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000504	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000505	IAO:0000115	
 WARN	missing_definition	obo:OLAS_0000506	IAO:0000115	
-WARN	missing_definition	obo:OLAS_1861634	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2159737	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2159739	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2159741	IAO:0000115	
@@ -3647,10 +3645,6 @@ WARN	missing_definition	obo:OLAS_2183236	IAO:0000115
 WARN	missing_definition	obo:OLAS_2183383	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2183384	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2183385	IAO:0000115	
-WARN	missing_definition	obo:OLAS_2183462	IAO:0000115	
-WARN	missing_definition	obo:OLAS_2183465	IAO:0000115	
-WARN	missing_definition	obo:OLAS_2183469	IAO:0000115	
-WARN	missing_definition	obo:OLAS_2183472	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2183536	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2183537	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2183574	IAO:0000115	
@@ -3729,9 +3723,6 @@ WARN	missing_definition	obo:OLAS_2429871	IAO:0000115
 WARN	missing_definition	obo:OLAS_2429880	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2429881	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2429882	IAO:0000115	
-WARN	missing_definition	obo:OLAS_2429911	IAO:0000115	
-WARN	missing_definition	obo:OLAS_2429915	IAO:0000115	
-WARN	missing_definition	obo:OLAS_2429921	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2429927	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2429935	IAO:0000115	
 WARN	missing_definition	obo:OLAS_2429939	IAO:0000115	
